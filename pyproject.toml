@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "snapsearch-client-python"
+version = "0.10.0"
+description = "Pythonic HTTP Client and Middleware for `SnapSearch`"
+authors = ["LIU Yu <liuyu@opencps.net>"]
+license = "MIT"
+readme = "README.rst"
+packages = [
+    { include = "SnapSearch", from = "src" },
+    { include = "api", from = "src/SnapSearch" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
